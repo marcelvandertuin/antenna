@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>antenna</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>	
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="/js/global.js"></script>
+		<script src="/js/lobby.js"></script>
+		<script src="/js/chat.js"></script>
+		<script src="/js/media.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/global.css">
+		<link rel="stylesheet" type="text/css" href="/css/lobby.css">
+		<link rel="stylesheet" type="text/css" href="/css/media.css">
+		<link rel="stylesheet" type="text/css" href="/css/chat.css">
+		<link rel="stylesheet" type="text/css" href="/css/tabs.css">
+		<link rel="stylesheet" type="text/css" href="/css/breakpoints.css">
+		<link rel="shortcut icon" href="assets/favicon/antenna.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="assets/favicon/antenna.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="assets/favicon/antenna-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="assets/favicon/antenna-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/antenna-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon/antenna-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/antenna-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/antenna-16.png">
+		<link rel="apple-touch-icon" href="assets/favicon/antenna-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/antenna-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/antenna-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/antenna-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/antenna-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/antenna-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/antenna-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/antenna-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/antenna-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="assets/favicon/antenna-144.png">
+		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+	</head>
+	<body>	
+		<section class="lobby_grid">
+			<section class="void"></section>
+			<section class="lobby_vessel">
+				<img src="/assets/antenna.png">
+				<ul>
+					<li>
+						<h1>New Room</h1>
+					</li>
+					<li>
+						<input type="text" autofocus="autofocus" id="room" name="room" maxlength="20" minlength="6" spellcheck="false">	
+					</li>
+					<li>
+						<section class="error_vessel">
+							<section class="error"></section>
+						</section>
+					</li>
+				</ul>
+			</section>
+			<section class="void"></section>
+		</section>
+		<section class="main_vessel">
+			<section class="main_grid">
+				<section class="media_vessel">			
+					<section class="player_vessel">
+						<section id="player"></section>
+					</section>
+					<audio controls hidden id="notify_msg" class="audio_tag">
+						<source src="/assets/notify.mp3" type="audio/wav">
+					</audio>
+					<audio controls hidden id="leave_msg" class="audio_tag">
+						<source src="/assets/exit.mp3" type="audio/mp3">
+					</audio>
+					<audio controls hidden id="enter_msg" class="audio_tag">
+						<source src="/assets/entry.mp3" type="audio/wav">
+					</audio>
+				</section>		
+				<section class="chat_vessel">
+					<input type="text" id="nickname" maxlength="25" spellcheck="false">
+					<a href="#" class="btn" id="btn_2"></a>
+					<a href="#" class="btn" id="btn_1"></a>		
+					<section class="tab_vessel">
+						<section class="profile_vessel"></section>
+						<section class="settings_vessel">
+							<h1 id="settings_title">Settings</h1>
+							<section class="settings_scroll">
+								<ul class="audio_options_list">							
+									<li>							
+										<section class="control_btns" id="settings_notify_btn"></section>		
+									</li>
+									<li>	
+										<section class="control_btns" id="settings_mute_btn"></section>	
+									</li>
+								</ul>
+								<ul class="player_controls_list">
+									<li>	
+										<section class="control_btns" id="settings_pauseplayer_btn"></section>
+									</li>
+									<li>
+										<section class="control_btns" id="settings_muteplayer_btn"></section>
+									</li>
+									<li>
+										<section class="control_btns" id="settings_stopplayer_btn"></section>
+									</li>
+								</ul>
+								<ul class="sliders_list">
+									<li>
+										<section class="sliders" id="all_volume"></section>	
+									</li>
+									<li>
+										<section class="sliders" id="player_seek"></section>
+									</li>
+									<li>
+										<section class="sliders" id="player_volume"></section>
+									</li>
+								</ul>			
+							</section>						
+						</section>
+						<section class="pm_vessel"></section>
+						<section class="users_vessel">
+							<section class="users_scroll"><ul></ul></section>
+						</section>	
+						<section class="om_vessel">
+								<section class="om_chat"><section class="om_chat_scroll"></section></section>
+						</section>							
+					</section>	
+					<section class="textarea_vessel">
+						<textarea id="message" maxlength="280" spellcheck="false"></textarea>
+					</section>	
+				</section>	
+			</section>
+		</section>
+	</body>
+</html>

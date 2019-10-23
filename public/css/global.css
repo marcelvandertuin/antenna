@@ -1,0 +1,36 @@
+::selection {
+	background: #540D6E; 
+	color: #E2FCEF;
+}
+::-moz-selection {
+	background: #540D6E;
+	color: #E2FCEF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font: 16px sans-serif, "Trebuchet MS";
+	max-width: 100%;
+	background-color: #202020;
+	overflow-x: hidden;
+	color: #E2FCEF;
+}
+
+section.main_vessel {
+	display: none;
+	overflow-y: hidden;
+}
+
+section.main_grid {
+	display: grid;
+	padding: 0 20px 0 0;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: 100vh;
+	grid-template-areas:
+	"a a a a a a b b";		
+}

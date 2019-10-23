@@ -1,0 +1,186 @@
+section.tab_vessel {
+	margin: 20px 0 0 0;
+	height: 75%;
+}
+
+/* PROFILE */
+
+section.profile_vessel {
+	height: 100%;
+	display: none;
+}
+
+h1#profile_title {
+	font-size: 20px;
+    font-weight: bold;
+	margin-bottom: 20px;
+}
+
+section.profile ul {
+	list-style: none;
+}
+
+section.profile ul li {
+	display: inline-block;
+}
+
+li#profile_title{
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing:1px;
+	font: 15px "Trebuchet MS", sans-serif;
+	color: #540D6E;	
+	font-weight: bold;
+	display: block;
+}
+
+li#profile_name, li#profile_time {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font: 20px "Trebuchet MS", sans-serif;
+	font-weight: bold;
+	display: block;
+}	
+
+section.tab_btn_profile {
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	margin: 20px 9px 0 0;
+	background-color: #540D6E;
+	outline: none;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;	
+	cursor: pointer;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+	display: block;
+}
+
+/* SETTINGS */
+
+section.settings_vessel {
+	height: 100%;
+	overflow: hidden;
+	display: none;	
+}
+
+section.settings_vessel h1 {
+	margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: bold;				
+}
+
+section.settings_scroll {
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 104%;
+	padding-top: 65px;
+	text-align: center;	
+}
+
+section.settings_scroll ul {
+	list-style: none;
+	display: block;	
+}
+
+section.settings_scroll li {
+	line-height: 30px;
+	display: inline;	
+}
+
+section.player_control_vessel {	
+	height: 100%;
+	margin-top: 30px;
+}
+
+section.all_volume_vessel {
+	margin: 9px 9px 30px 9px;
+	height: 100%;	
+}
+
+section.player_volume_vessel, section.player_seek_vessel {
+	margin: 30px 9px 30px 9px;
+	height: 100%;
+}
+
+/* PRIVATE CHAT */
+
+section.pm_vessel {
+	height: 100%;
+	display: none;
+	overflow: hidden;
+}
+
+section.pm_title {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font: 15px "Trebuchet MS", sans-serif;
+	color: #540D6E;	
+	font-weight: bold;
+	display: block;
+}
+
+section.pm_name {
+	height: 40px;
+	font: 20px "Trebuchet MS", sans-serif;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #E2FCEF;	
+	font-weight: bold;
+	padding: 0;
+}
+
+section.pm_chat {
+	height: 100%;
+	overflow: hidden;
+}
+
+section.pm_chat_scroll {
+	color: #E2FCEF;
+	height: 100%;
+	overflow-y: scroll;
+	width: 104%;
+}
+
+/* OPEN CHAT */
+
+section.om_vessel {
+	height: 100%;
+}
+
+section.om_chat {
+	height: 100%;
+	overflow: hidden;
+}
+
+section.om_chat_scroll {
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 104%;
+}
+
+/* USERS */
+
+section.users_vessel {
+	height: 100%;
+	overflow: hidden;
+	display: none;
+}
+
+section.users_scroll {
+	height: 100%;
+	overflow-y: scroll;
+	width: 104%;
+}
+
+section.users_scroll ul li h1 {
+	margin: 0 0 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+}

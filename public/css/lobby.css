@@ -1,0 +1,47 @@
+section.lobby_grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+section.lobby_vessel {
+	margin: 400px 0 30px 0;
+}
+
+section.lobby_vessel img {
+	width: 250px;
+	height: auto;
+	margin: 0 0 20px 0;
+}
+
+section.lobby_vessel h1 {
+	margin: 30px 0 20px 0;
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+section.lobby_vessel ul {
+	list-style: none;
+}
+
+section.error_vessel {
+	height: 15px;
+	margin: 10px 0 0 0;
+}
+
+a.roomlink {
+	text-decoration: none;	
+	font: 18px sans-serif;
+	font-weight: bold;
+	color: #540D6E;	
+}
+
+input#room {
+	outline: none;
+	border: none;
+	height: 30px;
+	font: 18px sans-serif;
+	font-weight: bold;
+	background-color: #202020;
+	color: #540D6E;	
+	margin-top: -6px;
+}
