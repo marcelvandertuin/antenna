@@ -46,7 +46,7 @@ function getVideoUrl(username, message, pm, id, speech, img, lnk, txt, vid, url,
 	let videoUrlRegex = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
 	let match = message.match(videoUrlRegex);
 	if( match && match[7].length == 11){
-		let id  = match[7];
+		let id = match[7];
 		let url = 'https://www.youtube.com/watch?v=' + id;
 		$.getJSON('https://noembed.com/embed', {
 			format: 'json', url: url
@@ -97,11 +97,11 @@ function playAudioNotifyMsg(type) {
 
 // Name generator
 $(document).ready(function() {
-	let names 		 = ['Guest', 'Star', 'Chupacabra', 'Merchant', 'Pilgrim', 'Stranger', 'Wrestler', 'Troll', 'Nemesis', 'Thief', 'Crazy', 'Warmonger', 'Person', 'Escapee', 'Deserter', 'Kid', 'Prisoner', 'Entity', 'Savage', 'Crook', 'Wanderer', 'Peasant', 'Hominoid', 'Maricoxi', 'Cyborg', 'Cyclops', 'Centaur', 'Minotaur'];
+	let names = ['Guest', 'Star', 'Chupacabra', 'Merchant', 'Pilgrim', 'Stranger', 'Wrestler', 'Troll', 'Nemesis', 'Thief', 'Crazy', 'Warmonger', 'Person', 'Escapee', 'Deserter', 'Kid', 'Prisoner', 'Entity', 'Savage', 'Crook', 'Wanderer', 'Peasant', 'Hominoid', 'Maricoxi', 'Cyborg', 'Cyclops', 'Centaur', 'Minotaur'];
 	let randomNumber = Math.floor(Math.random() * names.length);
-	let randomName   = names[randomNumber];
-	let txt 		 = '';
-	let characters 	 = 'abcdefghijklmnopxrstuvwxyz1230456789';
+	let randomName = names[randomNumber];
+	let txt = '';
+	let characters = 'abcdefghijklmnopxrstuvwxyz1230456789';
 	for(let i = 0; i < 7; i++) {
 		txt += characters.charAt(Math.floor(Math.random() * characters.length));	
 		$('#nickname').val(randomName + txt);
@@ -117,7 +117,7 @@ let interval = setInterval(function() {
 		let minutes = date.getMinutes();
 		let ampm = hours >= 12 ? 'pm' : 'pm';
 		hours = hours % 12;
-		hours = hours ? hours : 12; // the hour '0' should be '12'
+		hours = hours ? hours : 12;
 		minutes = minutes < 10 ? '0' + minutes : minutes;
 		let strTime = hours + ':' + minutes + ' ' + ampm;
 		let day = date.getDay();

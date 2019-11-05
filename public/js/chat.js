@@ -149,12 +149,12 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('body').on('click', 'a.userlink', function(e) {
 		e.preventDefault();
-		let id 		 = $(this).prop('id');	
-		let data 	 = $('#' + id).data('user');
+		let id = $(this).prop('id');	
+		let data = $('#' + id).data('user');
 		let userdata = data.split(',');
-		let pm 		 = '<section class="tab_btn_profile" data-user="' + [userdata[1], userdata[3]] + '" id="pm_' + userdata[3] + '"></section>';
-		let makemod  = '';
-		let block 	 = '';
+		let pm = '<section class="tab_btn_profile" data-user="' + [userdata[1], userdata[3]] + '" id="pm_' + userdata[3] + '"></section>';
+		let makemod = '';
+		let block = '';
 		
 		// Get current userdata
 		let currentUser = $('#'+socket.id).data('user');
@@ -214,8 +214,8 @@ $(document).ready(function() {
 	$('body').on('click', 'section.tab_btn_profile', function(e) {
 		e.preventDefault();
 		let preid = $(this).prop('id');
-		let type  = preid.substring(0, 3);
-		let id 	  = preid.slice(3);
+		let type = preid.substring(0, 3);
+		let id = preid.slice(3);
 		if( type == 'pm_'){
 			let data 	 = $('#'+id).data('user');
 			let userdata = data.split(',');
@@ -257,7 +257,7 @@ $(document).ready(function() {
 		$(this).css('background-color', '#E2FCEF');
 		let preid = $(this).prop('id');
 		let action = '';			
-		let type  = preid.substring(0, 3);
+		let type = preid.substring(0, 3);
 		if( type == 'pm_') {
 			action = 'Private message';
 		}else if(type == 'mm_') {

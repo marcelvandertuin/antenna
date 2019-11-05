@@ -93,7 +93,7 @@ io.on('connection', function(socket) {
 	socket.on('input_message', function(message, pm, id, speech) {
 		con.query('SELECT * FROM users WHERE socket = ?', [sessionid], function (err, results) {
 			if(err) throw err;	
-				let room 	 = results[0].room;		
+				let room = results[0].room;		
 				let username = results[0].username;		
 				let idSender = results[0].socket;		
 			if( pm){				
