@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>antenna</title>
+		<title>Antenna</title>
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="/socket.io/socket.io.js"></script>
@@ -38,12 +38,23 @@
 		<meta name="msapplication-TileColor" content="#FFFFFF">
 		<meta name="msapplication-TileImage" content="assets/favicon/antenna-144.png">
 		<meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+		<script>
+			// https://browser-update.org/#install
+			var $buoop = {required:{e:-4,f:-3,o:-3,s:-1,c:-3},insecure:true,api:2021.03 }; 
+			function $buo_f(){ 
+			 var e = document.createElement("script"); 
+			 e.src = "//browser-update.org/update.min.js"; 
+			 document.body.appendChild(e);
+			};
+			try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+			catch(e){window.attachEvent("onload", $buo_f)}
+		</script>
 	</head>
 	<body>	
 		<section class="lobby_grid">
 			<section class="void"></section>
 			<section class="lobby_vessel">
-				<img src="/assets/antenna.png">
+				<img alt="antenna" src="/assets/antenna.png">
 				<ul>
 					<li>
 						<h1>New Room</h1>

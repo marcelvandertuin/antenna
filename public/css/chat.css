@@ -92,8 +92,8 @@ section.thumbnail {
 }
 
 section.thumbnail img {
-	width:196px;
-	height:110px;
+	width: 196px;
+	height: 110px;
 }
 
 section.thumbnail_title {
@@ -103,5 +103,5 @@ section.thumbnail_title {
 	width: 208px;
 	word-wrap: break-word;
 	display: inline-block;
-	overflow:hidden;    	
+	overflow: hidden;    	
 }
