@@ -7,13 +7,13 @@ let mysql = require('mysql');
 
 require('dotenv').config();
 
-server.listen(process.env.VERCEL_URL || 8888);
+server.listen(process.env.PORT || 8888);
 console.log('Server is running!');
 
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-	res.sendFile(process.env.VERCEL_URL + '/index.html');
+	res.sendFile(__dirname + '/index.html');
 });
 
 // Connect database (Remove SSL on localhost/ local db)
