@@ -13,7 +13,7 @@ console.log('Server is running!');
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-	res.sendFile(__dirname + '/index.html');
+	res.sendFile(process.env.VERCEL_URL + '/index.html');
 });
 
 // Connect database (Remove SSL on localhost/ local db)
