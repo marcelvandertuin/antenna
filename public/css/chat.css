@@ -33,7 +33,7 @@ a.btn {
 }
 
 a.btn:hover {
-	background-color :#E2FCEF;
+	background-color: #E2FCEF;
 }
 
 a.userlink {
@@ -47,12 +47,12 @@ section.msg {
 	color: #E2FCEF;
 	word-wrap: break-word;
 	display: inline-block;
-    word-break: break-word;
+	word-break: break-word;
 	width: 100%;
 }
 
 section.msg a {
-	color: #540D6E;	
+	color: #540D6E;
 }
 
 section.textarea_vessel {
@@ -67,16 +67,16 @@ textarea#message {
 	resize: none;
 	border: none;
 	overflow-x: hidden;
-	overflow-y: hidden;	
+	overflow-y: hidden;
 	color: #E2FCEF;
 	background-color: #202020;
-	font: 16px sans-serif;	
+	font: 16px sans-serif;
 }
 
 section.thumbnail_vessel {
 	height: 110px;
 	width: 100%;
-	margin: 5px 0 0 0;	
+	margin: 5px 0 0 0;
 	cursor: pointer;
 }
 
@@ -85,7 +85,6 @@ section.thumbnail {
 	height: 110px;
 	cursor: pointer;
 	word-wrap: break-word;
-	display: inline-block;
 	word-break: break-all;
 	float: left;
 	padding-right: 15px;
@@ -99,9 +98,8 @@ section.thumbnail img {
 section.thumbnail_title {
 	color: #E2FCEF;
 	cursor: pointer;
-	float: left;
 	width: 208px;
 	word-wrap: break-word;
 	display: inline-block;
-	overflow: hidden;    	
+	overflow: hidden;
 }

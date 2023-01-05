@@ -12,7 +12,7 @@ section.profile_vessel {
 
 h1#profile_title {
 	font-size: 20px;
-    font-weight: bold;
+	font-weight: bold;
 	margin-bottom: 20px;
 }
 
@@ -27,20 +27,21 @@ section.profile ul li {
 li#profile_title {
 	margin: 0;
 	text-transform: uppercase;
-	letter-spacing:1px;
+	letter-spacing: 1px;
 	font: 15px "Trebuchet MS", sans-serif;
-	color: #540D6E;	
+	color: #540D6E;
 	font-weight: bold;
 	display: block;
 }
 
-li#profile_name, li#profile_time {
+li#profile_name,
+li#profile_time {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font: 20px "Trebuchet MS", sans-serif;
 	font-weight: bold;
 	display: block;
-}	
+}
 
 section.tab_btn_profile {
 	height: 30px;
@@ -51,7 +52,7 @@ section.tab_btn_profile {
 	outline: none;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;	
+	-webkit-border-radius: 50%;
 	cursor: pointer;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
@@ -64,13 +65,13 @@ section.tab_btn_profile {
 section.settings_vessel {
 	height: 100%;
 	overflow: hidden;
-	display: none;	
+	display: none;
 }
 
 section.settings_vessel h1 {
 	margin: 0 0 20px 0;
-    font-size: 20px;
-    font-weight: bold;				
+	font-size: 20px;
+	font-weight: bold;
 }
 
 section.settings_scroll {
@@ -79,30 +80,31 @@ section.settings_scroll {
 	overflow-x: hidden;
 	width: 104%;
 	padding-top: 65px;
-	text-align: center;	
+	text-align: center;
 }
 
 section.settings_scroll ul {
 	list-style: none;
-	display: block;	
+	display: block;
 }
 
 section.settings_scroll li {
 	line-height: 30px;
-	display: inline;	
+	display: inline;
 }
 
-section.player_control_vessel {	
+section.player_control_vessel {
 	height: 100%;
 	margin-top: 30px;
 }
 
 section.all_volume_vessel {
 	margin: 9px 9px 30px 9px;
-	height: 100%;	
+	height: 100%;
 }
 
-section.player_volume_vessel, section.player_seek_vessel {
+section.player_volume_vessel,
+section.player_seek_vessel {
 	margin: 30px 9px 30px 9px;
 	height: 100%;
 }
@@ -120,7 +122,7 @@ section.pm_title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font: 15px "Trebuchet MS", sans-serif;
-	color: #540D6E;	
+	color: #540D6E;
 	font-weight: bold;
 	display: block;
 }
@@ -130,7 +132,7 @@ section.pm_name {
 	font: 20px "Trebuchet MS", sans-serif;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	color: #E2FCEF;	
+	color: #E2FCEF;
 	font-weight: bold;
 	padding: 0;
 }

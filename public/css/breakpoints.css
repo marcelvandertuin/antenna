@@ -1,14 +1,17 @@
 @media screen and (max-width:1767px) {
-	
-	section.users_scroll, section.om_chat_scroll, section.pm_chat_scroll, section.settings_scroll {
-		width: 104.5%		
+
+	section.users_scroll,
+	section.om_chat_scroll,
+	section.pm_chat_scroll,
+	section.settings_scroll {
+		width: 104.5%
 	}
 }
 
-@media screen and (max-width:1650px){
-	
+@media screen and (max-width:1650px) {
+
 	input#nickname {
-		width :80%;	
+		width: 80%;
 	}
 }
 
@@ -16,32 +19,32 @@
 
 	section.main_grid {
 		grid-template-areas:
-		"a a a a a b b b";		
-	}		
+			"a a a a a b b b";
+	}
 }
 
 @media screen and (max-width:1250px) {
 
 	body {
-		margin:0 20px 20px 20px;
+		margin: 0 20px 20px 20px;
 	}
-	
+
 	section.main_grid {
 		grid-template-columns: repeat(1, 1fr);
 		grid-auto-rows: initial;
 		padding: 0;
 		grid-template-areas:
-		"a"
-		"b";			
+			"a"
+			"b";
 	}
-	
+
 	iframe#player {
-		top: 0;		
+		top: 0;
 	}
 
 	section.chat_vessel {
-		height: 875px;		
-		margin-left: 0px;	
+		height: 875px;
+		margin-left: 0px;
 	}
 }
 

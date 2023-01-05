@@ -16,7 +16,7 @@ section.lobby_vessel img {
 section.lobby_vessel h1 {
 	margin: 30px 0 20px 0;
 	font-size: 20px;
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 section.lobby_vessel ul {
@@ -29,10 +29,10 @@ section.error_vessel {
 }
 
 a.roomlink {
-	text-decoration: none;	
+	text-decoration: none;
 	font: 18px sans-serif;
 	font-weight: bold;
-	color: #540D6E;	
+	color: #540D6E;
 }
 
 input#room {
@@ -42,6 +42,6 @@ input#room {
 	font: 18px sans-serif;
 	font-weight: bold;
 	background-color: #202020;
-	color: #540D6E;	
+	color: #540D6E;
 	margin-top: -6px;
 }

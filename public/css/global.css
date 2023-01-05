@@ -1,7 +1,8 @@
 ::selection {
-	background: #540D6E; 
+	background: #540D6E;
 	color: #E2FCEF;
 }
+
 ::-moz-selection {
 	background: #540D6E;
 	color: #E2FCEF;
@@ -12,7 +13,8 @@
 	padding: 0;
 }
 
-html, body {
+html,
+body {
 	font: 16px sans-serif, "Trebuchet MS";
 	max-width: 100%;
 	background-color: #202020;
@@ -32,5 +34,5 @@ section.main_grid {
 	grid-gap: 20px;
 	grid-auto-rows: 100vh;
 	grid-template-areas:
-	"a a a a a a b b";		
+		"a a a a a a b b";
 }
